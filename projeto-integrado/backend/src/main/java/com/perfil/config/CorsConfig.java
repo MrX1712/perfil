@@ -19,7 +19,7 @@ public class CorsConfig implements WebMvcConfigurer {
                         "http://localhost:3000",
                         "http://127.0.0.1:5173",
                         "http://localhost:8081",
-                        "https://perfil-production-8b36.up.railway.app" // ← URL do frontend
+                        "https://perfil-roxedo.up.railway.app" // ← NOVO DOMÍNIO
                 )
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                 .allowedHeaders("*")
@@ -33,7 +33,7 @@ public class CorsConfig implements WebMvcConfigurer {
         configuration.addAllowedOrigin("http://localhost:3000");
         configuration.addAllowedOrigin("http://127.0.0.1:5173");
         configuration.addAllowedOrigin("http://localhost:8081");
-        configuration.addAllowedOrigin("https://perfil-production-8b36.up.railway.app"); // ← URL do frontend
+        configuration.addAllowedOrigin("https://perfil-roxedo.up.railway.app"); // ← NOVO DOMÍNIO
         configuration.addAllowedMethod("*");
         configuration.addAllowedHeader("*");
         configuration.setAllowCredentials(true);
