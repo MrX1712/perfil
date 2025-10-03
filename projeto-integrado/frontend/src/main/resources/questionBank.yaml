@@ -1,0 +1,89 @@
+version: v1
+questions:
+  - id: Q01
+    text: "Qual é o valor aproximado que você tem disponível para investir hoje?"
+    type: multi
+    options:
+      - "Acima de R$ 200.000"
+      - "Entre R$ 50.000 e R$ 200.000"
+      - "Entre R$ 5.000 e R$ 50.000"
+      - "Até R$ 5.000"
+    weight: 1.0
+    dimension: patrimonio
+
+  - id: Q02
+    text: "Com que frequência você estuda investimentos atualmente?"
+    type: multi
+    options:
+      - "Estudo mais de 4 horas por semana."
+      - "Estudo entre 1 a 2 horas por semana."
+      - "Estudo algumas horas por mês."
+      - "Raramente ou nunca estudo."
+    weight: 1.0
+    dimension: estudo
+
+  - id: Q03
+    text: "Como você avalia sua prática de investimentos hoje?"
+    type: multi
+    options:
+      - "Faço gestão ativa, uso opções, balanceio carteira e monto estratégias."
+      - "Já invisto também em ações, fundos imobiliários, ETFs e começo a usar opções."
+      - "Invisto de forma básica, principalmente renda fixa e alguns fundos."
+      - "Nunca investi ou só aplico em poupança/renda fixa."
+    weight: 1.0
+    dimension: manejo
+
+  - id: Q04
+    text: "Quanto de risco você se sente confortável para assumir nos seus investimentos?"
+    type: multi
+    options:
+      - "Muito alto — busco estratégias mais complexas para potencializar ganhos."
+      - "Alto — estou disposto a aceitar oscilações fortes por retornos maiores."
+      - "Moderado — aceito pequenas oscilações para ganhar mais no longo prazo."
+      - "Pouquíssimo - prefiro perder pouco a ganhar muito."
+    weight: 1.0
+    dimension: apetite_risco
+
+  - id: Q05
+    text: "Você já executa operações como compra e venda de ativos regularmente?"
+    type: multi
+    options:
+      - "Sim, opero semanalmente ou diariamente."
+      - "Sim, uma vez por mês ou mais."
+      - "Raramente."
+      - "Não."
+    weight: 1.0
+    dimension: operacoes
+
+  - id: Q06
+    text: "Você já conhece e/ou usa alguma estratégia com opções financeiras?"
+    type: multi
+    options:
+      - "Uso opções tanto para proteção quanto para gerar renda ou ganhos avançados."
+      - "Já usei opções para proteger minha carteira."
+      - "Conheço, mas nunca operei."
+      - "Não conheço nada sobre opções."
+    weight: 1.0
+    dimension: opcoes
+
+  - id: Q07
+    text: "Você já tem alguma diversificação entre renda fixa e renda variável?"
+    type: multi
+    options:
+      - "Maior peso em renda variável e estratégias sofisticadas."
+      - "Equilíbrio entre renda fixa e variável."
+      - "Principalmente renda fixa, mas comecei a diversificar."
+      - "Só renda fixa."
+    weight: 1.0
+    dimension: diversificacao
+
+  - id: Q08
+    text: "Qual o seu objetivo principal agora?"
+    type: multi
+    options:
+      - "Buscar ganhos exponenciais com proteção e inteligência."
+      - "Construir renda e blindar minha carteira contra crises."
+      - "Aprender a diversificar melhor e dar o próximo passo."
+      - "Aprender o básico e montar uma reserva segura."
+    weight: 1.0
+    dimension: objetivo
