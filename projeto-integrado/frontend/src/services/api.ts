@@ -1,4 +1,5 @@
-const API_BASE_URL = 'http://localhost:8080/api';
+// Use a variável de ambiente ou fallback para localhost
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8080/api';
 
 export interface QuestionarioForm {
   nome: string;
@@ -37,7 +38,8 @@ export interface PerfilDetalhes {
 class ApiService {
   async processarQuestionario(questionario: QuestionarioForm): Promise<ResultadoResponse> {
     try {
-      console.log('Enviando questionário:', questionario);
+      console.log('Enviando questionário para:', `${API_BASE_URL}/processar`);
+      console.log('Dados:', questionario);
 
       const response = await fetch(`${API_BASE_URL}/processar`, {
         method: 'POST',
@@ -85,6 +87,7 @@ class ApiService {
 
   async testarConectividade(): Promise<boolean> {
     try {
+      console.log('Testando conectividade com:', `${API_BASE_URL}/test`);
       const response = await fetch(`${API_BASE_URL}/test`, {
         method: 'GET',
       });
